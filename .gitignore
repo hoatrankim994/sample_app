@@ -23,3 +23,8 @@
 
 # Ignore Spring files.
 /spring/*.pid
+
+# Ignore rubocop
+.rubocop.yml
+.rubocop_disabled.yml
+.rubocop_enabled.yml
