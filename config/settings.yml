@@ -1,3 +1,4 @@
 leng_pass_min: 6
 leng_email_max: 255
 leng_name_max: 50
+size_gra_user: 150
