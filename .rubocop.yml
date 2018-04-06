@@ -21,11 +21,7 @@ AllCops:
     - 'config/**/*'
     - 'Guardfile'
     - 'app/models/application_record.rb'
-    - 'app/controllers/static_pages_controller.rb'
-    - 'app/controllers/application_controller.rb'
     - 'app/mailers/application_mailer.rb'
-    - 'app/helpers/application_helper.rb'
-    - 'app/helpers/static_pages_helper.rb'
   # By default, the rails cops are not run. Override in project or home
   # directory .rubocop.yml files, or by giving the -R/--rails option.
 Rails:
