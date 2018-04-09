@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
   def check_remember user
     log_in user
-    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_to user
+    params[:session][:remember_me] == Settings.check_remember ? remember(user) : forget(user)
+    redirect_back_or user
   end
 end
