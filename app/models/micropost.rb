@@ -5,11 +5,16 @@ class Micropost < ApplicationRecord
   validates :user_id, presence: true
   validates :content, presence: true, length: {maximum: Settings.leng_content_max}
   validate  :picture_size
+  scope :feed, -> (user_id) do
+    following_ids = Relationship.follower_user_by_user_id(user_id)
+    all_user_ids = following_ids + [user_id]
+    where user_id: all_user_ids
+  end
 
   private
 
   def picture_size
-    return if picture.size <= 5.megabytes
+    return if picture.size <= Settings.pic_size.megabytes
     errors.add(:picture, t("pic_less_5"))
   end
 end
