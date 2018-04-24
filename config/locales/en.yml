@@ -110,3 +110,9 @@ en:
   view_profile: "view my profile"
   rails_logo: "Rails logo"
   mic_feed: "Micropost Feed"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  mic:
+    one: "<b>Microposts</b> %{count}"

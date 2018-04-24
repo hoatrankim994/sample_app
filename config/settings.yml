@@ -4,3 +4,5 @@ leng_name_max: 50
 size_gra_user: 50
 check_remember: "1"
 leng_content_max: 140
+pic_size: 5
+res_expired: 2
